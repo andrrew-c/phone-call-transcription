@@ -1,4 +1,5 @@
 import re
+import pandas as pd
 
 def parse_filename(fname, fext='m4a'):
 
@@ -24,3 +25,14 @@ def parse_filename(fname, fext='m4a'):
     return dict(date=date, time=time, pnumber=pnumber)
 
 
+def get_all_files_info(files):
+
+    # Columns
+    #cols = ['filename', 'date', 'time', 'phonenumber']
+
+    outfiles = []
+
+    for file in files:
+        outfiles.append(parse_filename(file))
+
+    return pd.DataFrame(outfiles)
