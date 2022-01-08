@@ -1,4 +1,4 @@
 # Offline audio transcription
 PocketSphinx
-
 SpeechRecognition
+pandas
