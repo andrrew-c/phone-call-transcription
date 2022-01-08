@@ -1,6 +1,6 @@
 import os
 
-from constants import audio_path
+from project_secrets import audio_path
 
 from data_prep.helper_functions import get_all_files_info
 
