@@ -1,0 +1,4 @@
+# Offline audio transcription
+PocketSphinx
+
+SpeechRecognition
